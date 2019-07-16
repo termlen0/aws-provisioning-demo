@@ -43,6 +43,7 @@
     region: "{{ ec2_region }}"
     instance_tags:
       demo_name: "{{ ec2_name_prefix }}"
+      Name: "{{ inventory_hostname }}"
     wait: "{{ ec2_wait }}"
     vpc_subnet_id: "{{ ec2_vpc_subnet_id }}"
     volumes:

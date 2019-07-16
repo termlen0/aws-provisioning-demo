@@ -1,6 +1,0 @@
----
-- hosts: localhost
-  connection: local
-  become: yes
-  roles:
-      - RHEL7-STIG

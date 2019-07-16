@@ -2,6 +2,8 @@
 - name: PLAY TO CREATE THE DEMO USER
   hosts: all
   gather_facts: no
+  become: yes
+
   tasks:
 
     - name: CREATE DEMOUSER

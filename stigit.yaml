@@ -1,0 +1,10 @@
+---
+- name: STIG THE PROVISIONED VMS
+  hosts: spartans
+  become: yes
+
+  roles:
+    - role: rhel7-stig
+      vars:
+        rhel7stig_cat2_patch: no
+        rhel7stig_cat3_patch: no

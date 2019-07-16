@@ -1,0 +1,17 @@
+[lab100]
+lab100-vm01
+
+[lab200]
+lab200-vm01
+
+[lab300]
+lab300-vm01
+
+[lab100:vars]
+lab_name=lab100
+
+[lab200:vars]
+lab_name=lab200
+
+[lab300:vars]
+lab_name=lab300

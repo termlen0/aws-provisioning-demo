@@ -1,0 +1,10 @@
+---
+- name: CREATE DEMOUSER
+  user:
+    name: demouser
+    group: wheel
+
+- name: ENSURE THE PUBLIC KEY IS PRESENT
+  authorized_key:
+    user: demouser
+    key: "{{ lookup( 'file', '../files/aws-key.pub') }}"

@@ -43,7 +43,7 @@
     instance_tags:
       demo_name: "{{ ec2_name_prefix }}"
       Name: "{{ inventory_hostname }}"
-      security: stig
+      server_type: webserver
     wait: "{{ ec2_wait }}"
     vpc_subnet_id: "{{ ec2_vpc_subnet_id }}"
     volumes:

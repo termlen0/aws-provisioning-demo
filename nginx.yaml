@@ -1,0 +1,9 @@
+---
+- name: Install nginx on all hosts
+  hosts: all
+  become: yes
+
+  tasks:
+    - name: Kick of the nginx role
+      include_role:
+        name: geerlingguy.nginx

@@ -1,10 +1,10 @@
 ---
-- name: Install nginx on all hosts
+- name: Install apache on all hosts
   hosts: all
   become: yes
 
   tasks:
-    - name: Kick of the nginx role
+    - name: Kick of the apache install
       yum:
         name: httpd
         state: latest

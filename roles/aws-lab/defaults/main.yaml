@@ -1,6 +1,6 @@
 ---
 # default variables for lab environments
-ec2_name_prefix: freewheel
+ec2_name_prefix: attdemo
 ec2_region: us-east-1
 ec2_wait: yes
 ec2_az: "{{ec2_region}}a"
